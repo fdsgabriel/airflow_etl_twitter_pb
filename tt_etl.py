@@ -10,19 +10,16 @@ import s3fs
 def run_twitter_etl():
     
     #API Key
-    access_key = "7FkhO367YHas3jydkQbfiAuJj"
+    access_key = YOUR_KEY
 
     #API Secret Key
-    access_secret = "Pj5gVmTodst7wvjQZ2Kd8E7LdiRRKrXh7XtBgZiHQ9PVQKp9nF"
-
-    #Bearer Token
-    #AAAAAAAAAAAAAAAAAAAAAB5bjgEAAAAA7tr6fB3XIIfD5YTt2P%2FsFD3ej4s%3DloB7BrwiFoc65XR0xm47Xndv4drnLrvOsICTjOeIs3s0gfIVb4
-
+    access_secret = YOUR_KEY
+    
     #Access Token
-    consumer_key = "1593565512235204609-nAQXjFvicPB9SjBGJB7tLdMMX4Arww"
+    consumer_key = YOUR_KEY
 
     #Access Token Secret
-    consumer_secret = "MTvU4qVzG7GkObvnhZeTnOPpe5KumE7IGNnQwM0zJ4lC6"
+    consumer_secret = YOUR_KEY
 
     #Creating connection
     #Authentication
@@ -32,6 +29,7 @@ def run_twitter_etl():
     #Object
     api = tp.API(auth)
 
+    #Get info from medias
     all_tweets = []
     for user in ['@folha','@estadao','@uol','@jornalextra','@valoreconomico']:
         tweets = api.user_timeline(screen_name=user,
