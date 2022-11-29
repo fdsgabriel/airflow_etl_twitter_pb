@@ -4,4 +4,4 @@ The main concept here is collect tweets by the most known brazillian medias. The
 
 For that, I used python to write my ETL, EC2 to run Airflow and S3 as datalake. 
 
-Special thanks for Darshil. 
+Special thanks to Darshil. 
