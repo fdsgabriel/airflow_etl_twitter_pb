@@ -7,4 +7,4 @@ sudo pip install tweepy
 sudo pip install pandasql
 
 #Airflow credecials
-username: admin  password: fAt992ZEKCdhVwWP
+username: admin  password: xxx
